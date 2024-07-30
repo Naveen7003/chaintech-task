@@ -3,12 +3,16 @@ import { useNavigate } from 'react-router-dom'
 
 const EditProfile = () => {
     const navigate = useNavigate()
+
+    //finding current loggedInUser
     const currentUser = JSON.parse(localStorage.getItem('loggedInUser'))
+
     const [firstName, setFirstName] = useState(currentUser.firstName);
     const [lastName, setLastName] = useState(currentUser.lastName);
     const [email, setEmail] = useState(currentUser.email);
     const [gender, setGender] = useState(currentUser.gender);
 
+    //update the details of loggedInUser with current form details
     const handleSubmit = (e) =>{
         e.preventDefault()
 

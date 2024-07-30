@@ -2,12 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Profile = () => {
+
+  //find current loggedinuser and showing details
   const user = JSON.parse(localStorage.getItem('loggedInUser'));
-
-  if (!user) {
-    return <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">No user logged in</div>;
-  }
-
   const { firstName, lastName, email, gender } = user;
 
   return (

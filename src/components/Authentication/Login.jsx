@@ -8,7 +8,8 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
+    //checking email and  password for login and update loggedInUser details 
     try {
         const users = JSON.parse(localStorage.getItem('users'));
         if (users) {

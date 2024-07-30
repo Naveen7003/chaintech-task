@@ -9,12 +9,25 @@ import { Link, useNavigate } from "react-router-dom";
   const [password, setPassword] = useState('');
   const navigate = useNavigate();
 
+    //handle registration
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        //if user is found otherwise give an empty array
         const users = JSON.parse(localStorage.getItem('users')) || [];
-        console.log(users)
+        
+        //if user already exist then redirect to registration
+        const existingUser = users.find(user => user.email === email);
+         if (existingUser) {
+            alert('User with this email already exist')
+            navigate('/registration')
+        }
+
+        //push the form details in user array
         const newUser = { firstName, lastName, email, gender, password };
         users.push(newUser);
+
+        //save data on localstorage
         localStorage.setItem('users', JSON.stringify(users));
         localStorage.setItem('loggedInUser', JSON.stringify(newUser));
         navigate('/profile')
