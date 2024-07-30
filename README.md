@@ -39,4 +39,6 @@ A user authentication and profile management application built with React. This 
 
 1. Go to the `/editprofile` route to update your profile information.
 
+## Live Demo
 
+You can view the live version of the application here: [Live Demo](https://chaintech-task.onrender.com)
