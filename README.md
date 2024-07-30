@@ -1,8 +1,42 @@
-# React + Vite
+# User Authentication and Profile Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A user authentication and profile management application built with React. This app allows users to register, log in, view their profile, and edit their details. It uses local storage for data persistence and Tailwind CSS for styling.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User registration with first name, last name, email, gender, and password.
+- User login functionality.
+- Profile page to view user details.
+- Edit profile page to update user information.
+- Designed with Tailwind CSS.
+
+## Technologies Used
+
+- **Frontend**: React, Tailwind CSS
+- **State Management**: React Hooks
+- **Routing**: React Router
+- **Storage**: Local Storage
+
+
+## Usage
+
+### Registration
+
+1. Navigate to the `/registration` route.
+2. Fill in the form with your details and submit.
+
+### Login
+
+1. Navigate to the `/login` route.
+2. Enter your email and password, and log in.
+
+### Profile
+
+1. After logging in, you'll be redirected to the `/profile` route.
+2. View your profile details.
+
+### Edit Profile
+
+1. Go to the `/editprofile` route to update your profile information.
+
+
