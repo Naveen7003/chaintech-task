@@ -10,6 +10,7 @@ const Nav = () => {
             <Link>Jobs <i className="text-2xl ri-arrow-drop-down-line"></i></Link>  
             <Link>Courses <i className="text-2xl ri-arrow-drop-down-line"></i></Link>  
         </div>
+      
         <div className='flex items-center gap-12 font-semibold text-[2.5vh] text-zinc-700'>
             <Link className='flex gap-2'> 
                 <i className="text-xl ri-search-line"></i>
