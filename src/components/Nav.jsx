@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 const Nav = () => {
+  
   return (
     <div className='h-[10vh] bg-[#ffffff] w-full flex px-[19vh] py-2 gap-28 shadow-md'>
         <div className='flex text-[2.5vh] items-center font-semibold text-zinc-700 gap-12'>
